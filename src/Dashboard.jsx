@@ -9,7 +9,7 @@ import './util'
 
 
 export const Dashboard = () => (
-  <Canvas style={{width:'100vw',height:'90vh',overflowX:'hidden'}} camera={{ position: [0, 0,10], fov: 15 }}>
+  <Canvas style={{width:'100vw',height:'100vh',overflowX:'hidden',position:'absolute', top:0, left:0}} camera={{ position: [0, 0,10], fov: 15 }}>
       <Carousel />
     <OrbitControls />
     <Environment preset="city" background />

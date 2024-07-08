@@ -1,6 +1,6 @@
 // App.js
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import ARScene from './ARScene';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -9,6 +9,7 @@ import Uploadfiles from './Uploadfiles';
 
 
 const App = () => {
+ 
   return (  
     <>
     <BrowserRouter>

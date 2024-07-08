@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'aframe';
 import aframe from 'aframe';
 import { Entity, Scene } from 'aframe-react';
@@ -26,7 +26,7 @@ const ARScene = () => {
     setImages([...newImages]);
   };
 
-
+  
   
   const createImageEntities = () => {
     return images.map((src, index) => (
