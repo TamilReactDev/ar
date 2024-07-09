@@ -11,7 +11,6 @@ function Home() {
 
   useEffect(() => {
     return () => {
-      // Cleanup function to stop webcam and remove video element
       const video = document.getElementById('arjs-video');
       if (video) {
         const stream = video.srcObject;
@@ -30,8 +29,6 @@ function Home() {
 
      <Link style={{position:'absolute',zIndex:"1000", top:0, left:0,  color:'red'}} to={'/ar'}>enter vr mode</Link>
       <Dashboard />
-
-
     </>
   )
 }
