@@ -111,6 +111,9 @@ function Home() {
 			<button onClick={() => showNext(images[images.length - 1])} style={{ position: 'absolute', zIndex: '1000', bottom: 10, right: 10, padding: '10px 20px', backgroundColor: 'lightgray', color: 'red', textDecoration: 'none', borderRadius: '5px' }}>
 				Next
 			</button>
+			<Link to={'/uploadfiles'} style={{ position: 'absolute', zIndex: '1000', bottom: 10, right: 100, padding: '10px 20px', backgroundColor: 'lightgray', color: 'red', textDecoration: 'none', borderRadius: '5px' }}>
+				Upload
+			</Link>
 			{loading ? (
 				<Loading />
 			) : (

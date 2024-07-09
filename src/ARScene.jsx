@@ -7,6 +7,7 @@ import { collection, query, orderBy, startAfter, limit, getDocs, endBefore, limi
 import { db } from './firebase';
 import { v4 } from 'uuid';
 import Loading from './Loading';
+import { Link } from 'react-router-dom';
 
 
 const ARScene = () => {
@@ -113,6 +114,7 @@ const ARScene = () => {
 							<button onClick={() => showPrevious(images[0])} style={{ position: 'absolute', bottom: 20, left: '10%' }}>
 								Prev
 							</button>
+							
 
 						</>
 
